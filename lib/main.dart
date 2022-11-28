@@ -39,11 +39,25 @@ class _HomePageState extends State<HomePage> {
         fill: Fill
             .fillBack, // Fill the back side of the card to make in the same size as the front.
         direction: FlipDirection.HORIZONTAL, // default
-        front: Center(
-          child: Container(child: Image.asset('assets/front.png')),
+        front: Padding(
+          padding: const EdgeInsets.all(0.0),
+          child: Center(
+            child: Container(
+              child: Image.asset('assets/front.png'),
+              width: 800,
+              height: 500,
+            ),
+          ),
         ),
-        back: Center(
-          child: Container(child: Image.asset('assets/back.png')),
+        back: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Container(
+              child: Image.asset('assets/back.jpeg'),
+              width: 800,
+              height: 500,
+            ),
+          ),
         ),
       ),
     );
